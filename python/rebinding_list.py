@@ -16,10 +16,9 @@ def run(source: List[int]) -> List[int]:
     return ret
 
 
-def change_list_mutability(lst: List[int]) -> List[int]:
+def change_list_mutability(lst: List[int]) -> None:
     print(f'change_list_mutability: lst = {lst}')  # prints [1, 2, 3]
-    lst *= 2
-    return lst
+    lst *= 2  # no need to return it
 
 
 def run_mutability(source: List[int]) -> List[int]:
