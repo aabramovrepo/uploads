@@ -11,7 +11,7 @@ class CustomClass:
     @param_a.setter
     def param_a(self, value: bool) -> None:
         if isinstance(value, bool):
-            self._param_a = bool(value)
+            self._param_a = value
         else:
             raise TypeError(f'value hast to be of {bool.__name__} type, '
                             f'the given value is of {type(value)}')
@@ -23,7 +23,7 @@ class CustomClass:
     @param_b.setter
     def param_b(self, value: float) -> None:
         if isinstance(value, float):
-            self._param_b = float(value)
+            self._param_b = value
         else:
             raise TypeError(f'value hast to be of {float.__name__} type, '
                             f'the given value is of {type(value)}')
